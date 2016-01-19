@@ -1,5 +1,6 @@
 var express = require('express');
 var bodyParser = require('body-parser');
+var _ = require('underscore');
 
 var app = express();
 var PORT = process.env.PORT || 3000;
@@ -17,16 +18,8 @@ app.get('/todos', function(req, res) {
 // GET /todos/:id
 app.get('/todos/:id', function(req, res) {
 	var todoId = parseInt(req.params.id, 10);  //converts the params.id string to number
-	var matchedTodo;
-	// Iterate of todos array, Find the match.
-	// return res.status(404).send() if no match found.
-	todos.forEach(function(todo) {
-		if (todo.id === todoId) {
-			matchedTodo = todo;
-			;
-		}; 
-	})
-
+	var matchedTodo = _.findWhere(todos, {id: todoId});
+	
 	if (matchedTodo) {
 		res.json(matchedTodo);
 	} else {
@@ -38,11 +31,16 @@ app.get('/todos/:id', function(req, res) {
 
 // POST /todos
 app.post('/todos', function(req, res) {
-	var body = req.body;
+	var body = _.pick(req.body, 'description', 'completed');  // use _.pick to only pic description and completed
+
+	if (!_.isBoolean(body.completed) || !_.isString(body.description) || body.description.trim().length === 0) {
+		return res.status(400).send();   // 400 means bad request, can't be completed
+	}
 	
-	// add id field
-	// todos.length > 0 ? todoNextId++ : todoNextId; 
-	body.id = todoNextId++
+	// set body.description to be trimmed value
+  body.description = body.description.trim();
+	// add id field	
+	body.id = todoNextId++    // it will start with one and then increment everytime a new post is made
 	// push body into array
 	todos.push(body);
 	// console.log('description: ' + body.description);
