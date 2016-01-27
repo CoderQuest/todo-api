@@ -8,11 +8,27 @@ var todos = [];
 var todoNextId = 1;
 
 app.use(bodyParser.json()); // anytime a JSON request comes in express is going to parse it and we'll be able to access it via req.body
-
+app.get('/', function(req, res) {
+	res.send('Todo API root.')
+})
 // GET /todos
+// GET /todos?completed = true
 app.get('/todos', function(req, res) {
+	var queryParams = req.query; // this is an object, the value of the key is string, never boolean
+	var filteredTodos = todos;
+
+	// if has property && completed === "false"
+	// filteredTodos = _.where(filteredTodos, ?)
+	// else if has property && completed if 'false'
+	if (queryParams.hasOwnProperty('completed') && queryParams.completed === 'false') {
+		filteredTodos = _.where(filteredTodos, {completed: false});
+	} else if (queryParams.hasOwnProperty('completed') && queryParams.completed === 'true') {
+		filteredTodos = _.where(filteredTodos, {completed: true});
+	}
+
+	res.json(filteredTodos);
 	//need to convert object to JSON first
-	res.json(todos); // this is another way here to convert the array or objecgt into JSON and send it back to whoever called the API
+	// res.json(todos); // this is another way here to convert the array or objecgt into JSON and send it back to whoever called the API
 })
 
 // GET /todos/:id
@@ -25,7 +41,6 @@ app.get('/todos/:id', function(req, res) {
 	} else {
 		res.status(404).send();
 	}
-
 	// res.send('Asking for todo with id of ' + req.params.id)
 })
 
