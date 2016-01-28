@@ -12,7 +12,8 @@ app.get('/', function(req, res) {
 	res.send('Todo API root.')
 })
 // GET /todos
-// GET /todos?completed = true
+// GET /todos?completed=true  
+// GET /todos?completed=true&q=house   after *q* will describe the objects returned with the key word = "house"
 app.get('/todos', function(req, res) {
 	var queryParams = req.query; // this is an object, the value of the key is string, never boolean
 	var filteredTodos = todos;
@@ -24,6 +25,13 @@ app.get('/todos', function(req, res) {
 		filteredTodos = _.where(filteredTodos, {completed: false});
 	} else if (queryParams.hasOwnProperty('completed') && queryParams.completed === 'true') {
 		filteredTodos = _.where(filteredTodos, {completed: true});
+	}
+
+  // if there's keyword search after *q*   
+	if (queryParams.hasOwnProperty('q') && queryParams.q.length > 0) {
+		filteredTodos = _.filter(filteredTodos, function(todo) {
+			return todo.description.toLowerCase().indexOf(queryParams.q.toLowerCase()) > -1;
+		})
 	}
 
 	res.json(filteredTodos);
