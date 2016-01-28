@@ -27,15 +27,14 @@ app.get('/todos', function(req, res) {
 
 // GET /todos/:id
 app.get('/todos/:id', function(req, res) {
-	var todoId = parseInt(req.params.id, 10);  //converts the params.id string to number
+	var todoId = parseInt(req.params.id, 10); //converts the params.id string to number
 	var matchedTodo;
 	// Iterate of todos array, Find the match.
 	// return res.status(404).send() if no match found.
 	todos.forEach(function(todo) {
 		if (todo.id === todoId) {
 			matchedTodo = todo;
-			;
-		}; 
+		};
 	})
 
 	if (matchedTodo) {

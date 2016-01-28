@@ -1,0 +1,285 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'jscs' ]
+2 info using npm@2.7.4
+3 info using node@v0.12.2
+4 silly cache add args [ 'jscs', null ]
+5 verbose cache add spec jscs
+6 silly cache add parsed spec { raw: 'jscs',
+6 silly cache add   scope: null,
+6 silly cache add   name: 'jscs',
+6 silly cache add   rawSpec: '',
+6 silly cache add   spec: '*',
+6 silly cache add   type: 'range' }
+7 verbose addNamed jscs@*
+8 silly addNamed semver.valid null
+9 silly addNamed semver.validRange *
+10 silly addNameRange { name: 'jscs', range: '*', hasData: false }
+11 silly mapToRegistry name jscs
+12 silly mapToRegistry using default registry
+13 silly mapToRegistry registry https://registry.npmjs.org/
+14 silly mapToRegistry uri https://registry.npmjs.org/jscs
+15 verbose addNameRange registry:https://registry.npmjs.org/jscs not in flight; fetching
+16 verbose request uri https://registry.npmjs.org/jscs
+17 verbose request no auth needed
+18 info attempt registry request try #1 at 9:48:38 PM
+19 verbose request id c9b2911a752272f0
+20 verbose etag "8ODMKQN081BK82UYBGFLFYZ8W"
+21 http request GET https://registry.npmjs.org/jscs
+22 http 304 https://registry.npmjs.org/jscs
+23 silly get cb [ 304,
+23 silly get   { date: 'Thu, 28 Jan 2016 02:48:38 GMT',
+23 silly get     via: '1.1 varnish',
+23 silly get     'cache-control': 'max-age=300',
+23 silly get     etag: '"8ODMKQN081BK82UYBGFLFYZ8W"',
+23 silly get     age: '0',
+23 silly get     connection: 'keep-alive',
+23 silly get     'x-served-by': 'cache-iad2121-IAD',
+23 silly get     'x-cache': 'HIT',
+23 silly get     'x-cache-hits': '1',
+23 silly get     'x-timer': 'S1453949318.887483,VS0,VE95',
+23 silly get     vary: 'Accept' } ]
+24 verbose etag https://registry.npmjs.org/jscs from cache
+25 verbose get saving jscs to /Users/Moonlight/.npm/registry.npmjs.org/jscs/.cache.json
+26 silly addNameRange number 2 { name: 'jscs', range: '*', hasData: true }
+27 silly addNameRange versions [ 'jscs',
+27 silly addNameRange   [ '0.0.1',
+27 silly addNameRange     '0.0.2',
+27 silly addNameRange     '0.0.3',
+27 silly addNameRange     '0.0.4',
+27 silly addNameRange     '0.0.5',
+27 silly addNameRange     '0.0.6',
+27 silly addNameRange     '0.0.7',
+27 silly addNameRange     '0.0.8',
+27 silly addNameRange     '0.0.9',
+27 silly addNameRange     '0.0.10',
+27 silly addNameRange     '0.0.11',
+27 silly addNameRange     '0.0.12',
+27 silly addNameRange     '1.0.0',
+27 silly addNameRange     '1.0.1',
+27 silly addNameRange     '1.0.2',
+27 silly addNameRange     '1.0.3',
+27 silly addNameRange     '1.0.4',
+27 silly addNameRange     '1.0.5',
+27 silly addNameRange     '1.0.6',
+27 silly addNameRange     '1.0.7',
+27 silly addNameRange     '1.0.8',
+27 silly addNameRange     '1.0.10',
+27 silly addNameRange     '1.0.11',
+27 silly addNameRange     '1.0.12',
+27 silly addNameRange     '1.0.13',
+27 silly addNameRange     '1.0.14',
+27 silly addNameRange     '1.0.15',
+27 silly addNameRange     '1.1.0',
+27 silly addNameRange     '1.2.0',
+27 silly addNameRange     '1.2.1',
+27 silly addNameRange     '1.2.2',
+27 silly addNameRange     '1.2.3',
+27 silly addNameRange     '1.2.4',
+27 silly addNameRange     '1.3.0',
+27 silly addNameRange     '1.4.0',
+27 silly addNameRange     '1.4.1',
+27 silly addNameRange     '1.4.2',
+27 silly addNameRange     '1.4.3',
+27 silly addNameRange     '1.4.4',
+27 silly addNameRange     '1.4.5',
+27 silly addNameRange     '1.5.1',
+27 silly addNameRange     '1.5.2',
+27 silly addNameRange     '1.5.3',
+27 silly addNameRange     '1.5.4',
+27 silly addNameRange     '1.5.6',
+27 silly addNameRange     '1.5.7',
+27 silly addNameRange     '1.5.8',
+27 silly addNameRange     '1.5.9',
+27 silly addNameRange     '1.6.0',
+27 silly addNameRange     '1.6.1',
+27 silly addNameRange     '1.6.2',
+27 silly addNameRange     '1.7.0',
+27 silly addNameRange     '1.7.1',
+27 silly addNameRange     '1.7.2',
+27 silly addNameRange     '1.7.3',
+27 silly addNameRange     '1.8.0',
+27 silly addNameRange     '1.8.1',
+27 silly addNameRange     '1.9.0',
+27 silly addNameRange     '1.10.0',
+27 silly addNameRange     '1.11.0',
+27 silly addNameRange     '1.11.1',
+27 silly addNameRange     '1.11.2',
+27 silly addNameRange     '1.11.3',
+27 silly addNameRange     '1.12.0',
+27 silly addNameRange     '1.13.0',
+27 silly addNameRange     '1.13.1',
+27 silly addNameRange     '2.0.0',
+27 silly addNameRange     '2.1.0',
+27 silly addNameRange     '2.1.1',
+27 silly addNameRange     '2.2.0',
+27 silly addNameRange     '2.2.1',
+27 silly addNameRange     '2.3.0',
+27 silly addNameRange     '2.3.1',
+27 silly addNameRange     '2.3.2',
+27 silly addNameRange     '2.3.3',
+27 silly addNameRange     '2.3.4',
+27 silly addNameRange     '2.3.5',
+27 silly addNameRange     '2.4.0',
+27 silly addNameRange     '2.5.0',
+27 silly addNameRange     '2.5.1',
+27 silly addNameRange     '2.6.0',
+27 silly addNameRange     '2.7.0',
+27 silly addNameRange     '2.8.0',
+27 silly addNameRange     '2.9.0' ] ]
+28 verbose addNamed jscs@2.9.0
+29 silly addNamed semver.valid 2.9.0
+30 silly addNamed semver.validRange 2.9.0
+31 silly cache afterAdd jscs@2.9.0
+32 verbose afterAdd /Users/Moonlight/.npm/jscs/2.9.0/package/package.json not in flight; writing
+33 verbose afterAdd /Users/Moonlight/.npm/jscs/2.9.0/package/package.json written
+34 silly install resolved [ { author:
+34 silly install resolved      { name: 'Marat Dulin',
+34 silly install resolved        email: 'mdevils@yandex.ru',
+34 silly install resolved        url: 'https://github.com/jscs-dev/node-jscs/graphs/contributors' },
+34 silly install resolved     description: 'JavaScript Code Style',
+34 silly install resolved     name: 'jscs',
+34 silly install resolved     version: '2.9.0',
+34 silly install resolved     main: 'lib/checker',
+34 silly install resolved     homepage: 'http://jscs.info',
+34 silly install resolved     keywords:
+34 silly install resolved      [ 'code style',
+34 silly install resolved        'formatter',
+34 silly install resolved        'lint',
+34 silly install resolved        'linter',
+34 silly install resolved        'style guide',
+34 silly install resolved        'validate' ],
+34 silly install resolved     license: 'MIT',
+34 silly install resolved     repository:
+34 silly install resolved      { type: 'git',
+34 silly install resolved        url: 'git+https://github.com/jscs-dev/node-jscs.git' },
+34 silly install resolved     bugs: { url: 'https://github.com/jscs-dev/node-jscs/issues' },
+34 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object] ],
+34 silly install resolved     engines: { node: '>= 0.10.0' },
+34 silly install resolved     dependencies:
+34 silly install resolved      { 'babel-jscs': '^2.0.0',
+34 silly install resolved        chalk: '~1.1.0',
+34 silly install resolved        'cli-table': '~0.3.1',
+34 silly install resolved        commander: '~2.9.0',
+34 silly install resolved        escope: '^3.2.0',
+34 silly install resolved        esprima: '~2.7.0',
+34 silly install resolved        estraverse: '^4.1.0',
+34 silly install resolved        exit: '~0.1.2',
+34 silly install resolved        glob: '^5.0.1',
+34 silly install resolved        htmlparser2: '3.8.3',
+34 silly install resolved        'js-yaml': '~3.4.0',
+34 silly install resolved        'jscs-jsdoc': '^1.3.1',
+34 silly install resolved        'jscs-preset-wikimedia': '~1.0.0',
+34 silly install resolved        jsonlint: '~1.6.2',
+34 silly install resolved        lodash: '~3.10.0',
+34 silly install resolved        minimatch: '~3.0.0',
+34 silly install resolved        'natural-compare': '~1.2.2',
+34 silly install resolved        pathval: '~0.1.1',
+34 silly install resolved        prompt: '~0.2.14',
+34 silly install resolved        'reserved-words': '^0.1.1',
+34 silly install resolved        resolve: '^1.1.6',
+34 silly install resolved        'strip-bom': '^2.0.0',
+34 silly install resolved        'strip-json-comments': '~1.0.2',
+34 silly install resolved        'to-double-quotes': '^2.0.0',
+34 silly install resolved        'to-single-quotes': '^2.0.0',
+34 silly install resolved        vow: '~0.4.8',
+34 silly install resolved        'vow-fs': '~0.3.4',
+34 silly install resolved        xmlbuilder: '^3.1.0' },
+34 silly install resolved     devDependencies:
+34 silly install resolved      { browserify: '^12.0.0',
+34 silly install resolved        chai: '^3.3.0',
+34 silly install resolved        coveralls: '~2.11.2',
+34 silly install resolved        'has-ansi': '~2.0.0',
+34 silly install resolved        jshint: '~2.8.0',
+34 silly install resolved        mocha: '^2.2.0',
+34 silly install resolved        regenerate: '~1.2.1',
+34 silly install resolved        rewire: '^2.3.1',
+34 silly install resolved        sinon: '^1.13.0',
+34 silly install resolved        'sinon-chai': '^2.8.0',
+34 silly install resolved        'unicode-7.0.0': '~0.1.5',
+34 silly install resolved        'unit-coverage': '^4.0.1',
+34 silly install resolved        xml2js: '~0.4.4' },
+34 silly install resolved     bin: { jscs: './bin/jscs' },
+34 silly install resolved     'unit-coverage': { common: [Object] },
+34 silly install resolved     scripts:
+34 silly install resolved      { lint: 'jshint . && node bin/jscs lib test bin publish',
+34 silly install resolved        pretest: 'npm run lint',
+34 silly install resolved        test: 'mocha --color',
+34 silly install resolved        'autofix-tests': 'node test/scripts/integration.js',
+34 silly install resolved        coverage: 'unit-coverage run -p common',
+34 silly install resolved        'coverage-html': 'unit-coverage run -p common -r html -o coverage.html',
+34 silly install resolved        coveralls: 'unit-coverage run -p common -r lcov -o out.lcov && cat out.lcov | coveralls',
+34 silly install resolved        browserify: 'browserify --standalone JscsStringChecker lib/string-checker.js -o jscs-browser.js',
+34 silly install resolved        changelog: 'git log `git describe --tags --abbrev=0`..HEAD --pretty=format:\' * %s (%an)\' | grep -v \'Merge pull request\'',
+34 silly install resolved        release: 'node publish/prepublish && npm test && npm publish',
+34 silly install resolved        postpublish: 'node publish/postpublish',
+34 silly install resolved        travis: 'npm run test && npm run autofix-tests && npm run coveralls' },
+34 silly install resolved     files:
+34 silly install resolved      [ 'bin',
+34 silly install resolved        'lib',
+34 silly install resolved        'patterns',
+34 silly install resolved        'presets',
+34 silly install resolved        'LICENSE',
+34 silly install resolved        'jscs-browser.js' ],
+34 silly install resolved     gitHead: '556c357e9d95a70b916878e47b26d41a9859c0d5',
+34 silly install resolved     _id: 'jscs@2.9.0',
+34 silly install resolved     _shasum: '8823fe3d29ec40a3581daee9e0db419ff31684fe',
+34 silly install resolved     _from: 'jscs@*',
+34 silly install resolved     _npmVersion: '3.5.2',
+34 silly install resolved     _nodeVersion: '5.1.0',
+34 silly install resolved     _npmUser: { name: 'hzoo', email: 'hi@henryzoo.com' },
+34 silly install resolved     dist:
+34 silly install resolved      { shasum: '8823fe3d29ec40a3581daee9e0db419ff31684fe',
+34 silly install resolved        tarball: 'http://registry.npmjs.org/jscs/-/jscs-2.9.0.tgz' },
+34 silly install resolved     directories: {},
+34 silly install resolved     _resolved: 'https://registry.npmjs.org/jscs/-/jscs-2.9.0.tgz',
+34 silly install resolved     readme: 'ERROR: No README data found!' } ]
+35 info install jscs@2.9.0 into /usr/local/lib
+36 info installOne jscs@2.9.0
+37 verbose installOne of jscs to /usr/local/lib not in flight; installing
+38 verbose lock using /Users/Moonlight/.npm/_locks/jscs-6edbd6e3f0cd298d.lock for /usr/local/lib/node_modules/jscs
+39 silly install write writing jscs 2.9.0 to /usr/local/lib/node_modules/jscs
+40 silly cache addNamed cb jscs@2.9.0
+41 verbose unbuild lib/node_modules/jscs
+42 silly gentlyRm /usr/local/lib/node_modules/jscs is being purged from base /usr/local
+43 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/jscs
+44 verbose tar unpack /Users/Moonlight/.npm/jscs/2.9.0/package.tgz
+45 verbose tar unpacking to /usr/local/lib/node_modules/jscs
+46 silly gentlyRm /usr/local/lib/node_modules/jscs is being purged
+47 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/jscs
+48 silly gunzTarPerm modes [ '755', '644' ]
+49 error tar.unpack untar error /Users/Moonlight/.npm/jscs/2.9.0/package.tgz
+50 verbose unlock done using /Users/Moonlight/.npm/_locks/jscs-6edbd6e3f0cd298d.lock for /usr/local/lib/node_modules/jscs
+51 verbose fstream_path /usr/local/lib/node_modules/jscs
+52 verbose fstream_type Directory
+53 verbose fstream_class DirWriter
+54 verbose stack Error: EACCES, mkdir '/usr/local/lib/node_modules/jscs'
+54 verbose stack     at Error (native)
+55 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+55 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+55 verbose fstream_stack FSReqWrap.oncomplete (fs.js:95:15)
+56 verbose cwd /Users/Moonlight/Library/Mobile Documents/com~apple~CloudDocs/Udemy/nodejs/section-7/todo-api
+57 error Darwin 15.2.0
+58 error argv "node" "/usr/local/bin/npm" "install" "-g" "jscs"
+59 error node v0.12.2
+60 error npm  v2.7.4
+61 error path /usr/local/lib/node_modules/jscs
+62 error code EACCES
+63 error errno -13
+64 error Error: EACCES, mkdir '/usr/local/lib/node_modules/jscs'
+64 error     at Error (native)
+64 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/jscs']
+64 error   errno: -13,
+64 error   code: 'EACCES',
+64 error   path: '/usr/local/lib/node_modules/jscs',
+64 error   fstream_type: 'Directory',
+64 error   fstream_path: '/usr/local/lib/node_modules/jscs',
+64 error   fstream_class: 'DirWriter',
+64 error   fstream_stack:
+64 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+64 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+64 error      'FSReqWrap.oncomplete (fs.js:95:15)' ] }
+65 error Please try running this command again as root/Administrator.
+66 verbose exit [ -13, true ]
+67 verbose unbuild lib/node_modules/jscs
+68 silly gentlyRm /usr/local/lib/node_modules/jscs is being purged from base /usr/local
+69 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/jscs
